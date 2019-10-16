@@ -1,0 +1,17 @@
+Child
+
+1.  Jimmy
+	DoB - "7/13/2007"
+	Height - 60
+	Weight - 110
+	Location -"Hockey Practice"
+	Clothes - [shirt:S,pants:S,Shoes:9]
+	SkatesOn - False
+
+2. Bobby
+	DoB - "7/29/2015
+	Height - 35
+	Weight - 56 	
+	Location - "Daycare"
+	Clothes - [Shirt:XS, pants:XS,Shoes:1]
+	

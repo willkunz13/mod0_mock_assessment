@@ -1,0 +1,39 @@
+Doing Laundry
+
+Import: Physics, Hand, Washer, Dryer, Clothes, Detergent
+#I dont want to break down the steps of how these work, they work like in real life
+
+
+1. Wash
+	1.1 Select Setting on Washer
+		1.1.1 Hand.Eval clothes
+		1.1.2 Hand.SelectWasherSetting based on return value of eval
+	1.2 Put clothes in washer
+		1.2.1 While DirtyClothes outside washer
+			1.2.1.1 Hand.Grab DirtyClothes[n]
+			1.2.1.2 Hand.Lift DirtyClothes[n]
+			1.2.1.3 Hand.PlaceInWasher DirtyClothes[n]
+			1.2.1.4 n + 1
+	1.3 Add Detergent
+		1.3.1 Hand.grab detergent
+		1.3.2 Hand.lift detergent
+		1.3.3 Hand,pour detergent
+	1.4 Start Washer
+		1.4.1 hand,push start button
+2. Dry
+	2.1 If washer is done
+	2.2 Load clothes from washer into dryer
+		2.2.1 While Clothes in washer
+			2.2.1.1 Hand.Grab DirtyClothes[n]
+			2.2.1.2 Hand.Lift DirtyClothes[n]
+			2.2.1.3 Hand.PlaceInWasher DirtyClothes[n]
+			2.2.1.4 n + 1
+	2.2 Start Dryer
+		2.2.1 Hand.SelectDryerSetting based on return value of eval
+		2.2.2 Hand.push start button 
+	2.3 Take Clothes out
+		2.3.1 While Clothes in dryer
+			2.3.1 Hand.Grab DirtyClothes[n]
+			2.3.2 Hand.Lift DirtyClothes[n]
+			2.3.3 Hand.PlaceInCleanHamper
+			2.3.3 Declare DirtyClothes clean 

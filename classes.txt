@@ -1,0 +1,27 @@
+Child
+
+Attributes:
+
+DoB(string)
+#DoB converted to int in later calculations
+Height(int)
+#in
+Weight(int)
+#lbs.
+Location(string)
+Clothes(Hash)
+
+Methods:
+
+ChangeRoom - changes Location of child
+
+AddShirt - adds new field to hash Clothes based on Height and Weight to 
+	determine shirt size
+
+CurrentAge - Converts DoB to int then subtracts it from Today's Date
+
+Feed - Adds to Weight of child
+
+
+
+
